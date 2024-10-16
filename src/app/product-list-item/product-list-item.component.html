@@ -1,8 +1,26 @@
 <!--This is the template of the list item, this is what will get repeated
  for evey list item that you have-->
 <div *ngIf="product">
-  <!--TODO  Make this pretty and fill out rest of properties-->
-  <h1> {{product.id}}</h1>
-  <p>{{product.company}}</p>
-
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Company</th>
+      <th>In Stock</th>
+      <th>Price</th>
+      <th>Product Name</th>
+      <th>Vendor</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>{{ product.id }}</td>
+      <td>{{ product.company }}</td>
+      <td>{{ product.inStock }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.productName }}</td>
+      <td>{{ product.vendor }}</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
