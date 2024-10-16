@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {Product} from "../Shared/models/product";
 import {NgForOf} from "@angular/common";
 import {ProductListItemComponent} from "../product-list-item/product-list-item.component";
+import {ProductService} from "../services/product.service";
 
 @Component({
   selector: 'app-product-list',
@@ -15,5 +16,7 @@ import {ProductListItemComponent} from "../product-list-item/product-list-item.c
 })
 export class ProductListComponent {
 
+  constructor(private productService: ProductService) {
+  }
 
 }
