@@ -1,11 +1,10 @@
-<!--This is the template of the list item, this is what will get repeated
- for evey list item that you have-->
-<div *ngIf="product">
-  <table>
+<!-- This is the template of the list item, this is what will get repeated for every list item that you have -->
+<div *ngIf="product" class="product-container">
+  <table class="product-table">
     <thead>
     <tr>
       <th>ID</th>
-      <th>picture</th>
+      <th>Picture</th>
       <th>Company</th>
       <th>In Stock</th>
       <th>Price</th>
@@ -16,7 +15,7 @@
     <tbody>
     <tr>
       <td>{{ product.id }}</td>
-      <td><img [src]="product.img" alt="An image"></td>
+      <td><img [src]="product.img" alt="An image" class="product-image"></td>
       <td>{{ product.company }}</td>
       <td>{{ product.inStock }}</td>
       <td>{{ product.price }}</td>
