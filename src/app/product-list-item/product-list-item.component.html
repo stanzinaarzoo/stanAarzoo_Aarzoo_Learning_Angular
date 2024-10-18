@@ -5,6 +5,7 @@
     <thead>
     <tr>
       <th>ID</th>
+      <th>picture</th>
       <th>Company</th>
       <th>In Stock</th>
       <th>Price</th>
@@ -15,6 +16,7 @@
     <tbody>
     <tr>
       <td>{{ product.id }}</td>
+      <td><img [src]="product.img" alt="An image"></td>
       <td>{{ product.company }}</td>
       <td>{{ product.inStock }}</td>
       <td>{{ product.price }}</td>

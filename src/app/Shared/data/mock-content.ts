@@ -7,7 +7,8 @@ export const products: Product[] = [
     company: "Dell",
     vendor: "js tech sol",
     price: 1000,
-    inStock: false
+    inStock: false,
+    img: '/assets/iphone.jpg'
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ export const products: Product[] = [
     company: "apple",
     vendor: "Mobile LLP",
     price: 1100,
-    inStock: false
+    inStock: false,
+    img: '/assets/LG.jpg'
   },
   {
     id: 3,
@@ -23,7 +25,8 @@ export const products: Product[] = [
     company: "apple",
     vendor: "SoundZone",
     price: 130,
-    inStock: true
+    inStock: true,
+    img: '/assets/iphone.jpg'
   },
   {
     id: 4,
@@ -31,7 +34,8 @@ export const products: Product[] = [
     company: "LG",
     vendor: "led and sons",
     price: 100,
-    inStock: false
+    inStock: false,
+    img: '/assets/LG.jpg'
   },
   {
     id: 5,
@@ -39,6 +43,7 @@ export const products: Product[] = [
     company: "dell",
     vendor: "BBT",
     price: 10,
-    inStock: true
+    inStock: true,
+    img: "/assets/LG.jpg"
   }
 ];

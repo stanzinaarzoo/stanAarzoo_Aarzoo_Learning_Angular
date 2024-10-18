@@ -3,6 +3,7 @@ export interface Product {
     productName: string,
     company: string,
     vendor: string,
-    inStock?: boolean,
-    price:number
+    inStock: boolean,
+    price:number,
+    img?: string
   }
