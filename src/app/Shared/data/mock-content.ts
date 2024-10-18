@@ -17,7 +17,7 @@ export const products: Product[] = [
     vendor: "Mobile LLP",
     price: 1100,
     inStock: false,
-    img: '/assets/LG.jpg'
+    img: '/assets/laptop.jpg'
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const products: Product[] = [
     vendor: "led and sons",
     price: 100,
     inStock: false,
-    img: '/assets/LG.jpg'
+    img: '/assets/laptop.jpg'
   },
   {
     id: 5,
@@ -44,6 +44,6 @@ export const products: Product[] = [
     vendor: "BBT",
     price: 10,
     inStock: true,
-    img: "/assets/LG.jpg"
+    img: "/assets/laptop.jpg"
   }
 ];
