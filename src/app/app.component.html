@@ -1,42 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=\, initial-scale=1.0">
-  <title>Aarzoo's first angular project</title>
-</head>
-
-<body style="background-color: cadetblue; padding: 2%;">
-  <div style="text-align: center;">
-  <h1>My name is {{name}}</h1>
-  <h1>This is my theme on {{theme}}</h1>
-</div>
-
-<!-- ngfor old version -->
-<div style="display: flex; align-items: center;justify-content: center;"> 
-  <!-- for new vwrion angular -->
-  @for (product of Products; track product) {
-    <div style="border: 1px solid #ccc; padding: 20px; margin: 10px; display: inline-block;">
-      <h2 style="font-size: 1.5em; margin-bottom: 10px;">{{product.productName}}</h2>
-      <ul style="list-style-type: none; padding: 0;">
-        <li>
-          <p style="margin: 5px 0;">Company: {{product.company}}</p>
-        </li>
-        <li>
-          <p style="margin: 5px 0;">Vendor: {{product.vendor}}</p>
-        </li>
-        <li>
-          <p style="margin: 5px 0;">Price: {{product.price}}</p>
-        </li>
-        <li>
-          <p style="margin: 5px 0;">In Stock: {{product.inStock}}</p>
-        </li>
-      </ul>
-    </div>
-  }
-</div>
-
-</body>
-
-</html>
+<nav>
+  <a routerLink="/art">Gallery</a>
+  <a routerLink="/about">About</a>
+</nav>
+<router-outlet></router-outlet>
