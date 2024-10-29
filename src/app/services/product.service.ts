@@ -16,7 +16,7 @@ export class ProductService {
   }
     //Adding basic CRUD methods
     //Create: Add Product
-    addProducts(newProduct:Product) : Observable<Product []> {
+    addProduct(newProduct:Product) : Observable<Product []> {
       this.products.push(newProduct)
       return of(this.products);
     }
@@ -37,6 +37,10 @@ export class ProductService {
     getProductById(productId: number): Observable<Product | undefined> {
       const product = this.products.find(product => product.id === productId);
       return of(product);
+    }
+
+    generateNewId(): number{
+      return this.products.length > 0 ? Math.max(...this.products.map(product => product.id) ) +1 : 1;
     }
   }
 

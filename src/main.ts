@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './app/page-not-found/page-not-found.compo
 const routes: Routes = [
   { path: '', redirectTo: '/products', pathMatch: 'full' }, // default route
   { path: 'products', component: ProductListComponent },
-  { path: 'modifiedProduct', component: ModifiedProductComponent },
+  { path: 'modified-Product', component: ModifiedProductComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
