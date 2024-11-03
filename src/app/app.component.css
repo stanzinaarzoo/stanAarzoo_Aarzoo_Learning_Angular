@@ -1,0 +1,54 @@
+/* Basic reset for body */
+body {
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a clean font */
+  background-color: #f4f4f4; /* Light background color */
+}
+
+/* Header styles */
+h1 {
+  text-align: center; /* Center-align header */
+  color: #333; /* Dark text color */
+  margin: 20px 0; /* Space above and below header */
+}
+
+/* Navigation styles */
+nav {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center the navigation items */
+  margin: 20px 0; /* Space above and below navigation */
+  background-color: lightgray; /* grey background for navigation */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 0; /* Vertical padding */
+}
+
+nav a {
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 20px; /* Padding around links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: #fff; /* Keep text color white */
+}
+
+nav a.active {
+  background-color: #0056b3; /* Active link background color */
+  color: #fff; /* Active link text color */
+}
+
+/* Router outlet styling */
+router-outlet {
+  display: block; /* Block display for proper layout */
+  margin: 20px auto; /* Center the outlet with margin */
+}
+
+/* Footer styles */
+footer {
+  text-align: center; /* Center-align footer text */
+  margin: 40px 0; /* Space above and below footer */
+  font-size: 14px; /* Smaller font size */
+  color: #666; /* Gray text color */
+}
