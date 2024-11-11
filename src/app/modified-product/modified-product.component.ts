@@ -37,7 +37,7 @@ export class ModifiedProductComponent implements OnInit {
   onSubmit(): void {
     if (this.productForm.valid) {
       const product: Product = this.productForm.value;
-      this.productService.addProducts(product).subscribe((updatedProducts) => {
+      this.productService.addProduct(product).subscribe((updatedProducts) => {
         console.log('Product added:', product);
         this.productForm.reset(); // Reset the form after submission
       });
