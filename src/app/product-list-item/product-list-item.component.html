@@ -27,6 +27,9 @@
       <td>
         {{product | productName}}
       </td>
+
+      <td> <button (click)="editProduct()">Edit</button></td>
+      <td> <button (click)="onDelete(product.id)">Delete</button></td>
     </tr>
     </tbody>
   </table>

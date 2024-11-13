@@ -3,6 +3,7 @@ import {Product} from "../Shared/models/product";
 import {NgForOf} from "@angular/common";
 import {ProductListItemComponent} from "../product-list-item/product-list-item.component";
 import {ProductService} from "../services/product.service";
+import {Router} from "express";
 
 @Component({
   selector: 'app-product-list',
@@ -16,7 +17,8 @@ import {ProductService} from "../services/product.service";
 })
 export class ProductListComponent implements OnInit {
 products: Product[]=[]; // for the storage for future
-  constructor(private productService: ProductService) {
+  constructor(private productService: ProductService,
+              private route: Router) {
   }
 
   ngOnInit() {
