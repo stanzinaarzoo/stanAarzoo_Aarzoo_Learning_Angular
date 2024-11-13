@@ -10,17 +10,23 @@
       <th>Price</th>
       <th>Product Name</th>
       <th>Vendor</th>
+      <th>
+        fullProduct-detail
+      </th>
     </tr>
     </thead>
     <tbody>
     <tr>
       <td>{{ product.id }}</td>
       <td><img [src]="product.img" alt="An image" class="product-image"></td>
-      <td>{{ product.company }}</td>
+      <td>{{ product.company | titlecase }}</td>
       <td>{{ product.inStock }}</td>
-      <td>{{ product.price }}</td>
-      <td>{{ product.productName }}</td>
+      <td>{{ product.price | currency:"USD"}}</td>
+      <td>{{ product.productName | uppercase}}</td>
       <td>{{ product.vendor }}</td>
+      <td>
+        {{product | productName}}
+      </td>
     </tr>
     </tbody>
   </table>
