@@ -12,9 +12,16 @@ import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
 
 const routes: Routes = [
   { path: '', redirectTo: '/products', pathMatch: 'full' }, // default route
-  { path: 'products', component: ProductListComponent },
-  { path: 'modifiedProduct', component: ModifiedProductComponent },
-  { path: '**', component: PageNotFoundComponent },
+  { path: 'products', component: ProductListComponent },  // eagerly loaded
+  {path: 'products/:id',
+     loadComponent: () =>
+       import('./app/product-list/product-list.component').then (m=> m.ProductListComponent)}, //lazy loading
+  { path: 'modified-product',
+        loadComponent: () =>
+          import('./app/modified-product/modified-product.component').then (m=> m.ModifiedProductComponent) },
+  { path: '**',
+    loadComponent: () =>
+      import('./app/page-not-found/page-not-found.component').then(m => m.PageNotFoundComponent) }
 ];
 
 bootstrapApplication(AppComponent, {
