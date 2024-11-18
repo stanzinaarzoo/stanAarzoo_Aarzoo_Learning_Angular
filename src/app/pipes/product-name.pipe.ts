@@ -8,7 +8,7 @@ import { Product } from "../Shared/models/product";
 export class ProductNamePipe implements PipeTransform {
 
   transform(product: Product): string {
-    return `${product.productName} by ${product.company} - Price: $${product.price}`;
+    return `${product.productName} by ${product.company} - Price: ${product.price}`;
   }
 
 }
